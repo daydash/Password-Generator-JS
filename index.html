@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script
+      src="https://kit.fontawesome.com/a230101078.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Password Generator</h1>
+      <h3 class="password-display">
+        <p id="passwordDisplay">password</p>
+        <i class="fa-regular fa-copy" id="clipboard"></i>
+        <div id="copyAlert">Copied!</div>
+      </h3>
+
+      <form id="passwordGeneratorForm" class="form">
+        <label for="characterAmountNumber">Number Of Characters</label>
+        <div class="character-amount-container">
+          <input
+            type="range"
+            min="1"
+            max="50"
+            value="10"
+            id="characterAmountRange"
+          />
+          <input
+            class="number-input"
+            type="number"
+            min="1"
+            max="50"
+            value="10"
+            id="characterAmountNumber"
+          />
+        </div>
+
+        <label for="includeUppercase">Include Uppercase</label>
+        <input type="checkbox" id="includeUppercase" />
+
+        <label for="includeLowercase">Include Lowercase</label>
+        <input type="checkbox" id="includeLowercase" />
+
+        <label for="includeNumbers">Include Numbers</label>
+        <input type="checkbox" id="includeNumbers" />
+
+        <label for="includeSymbols">Include Symbols</label>
+        <input type="checkbox" id="includeSymbols" />
+
+        <button type="submit" class="btn">Generate Password</button>
+        <button type="button" class="btn" id="clearPassword">
+          Clear Password
+        </button>
+      </form>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
