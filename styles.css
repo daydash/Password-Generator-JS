@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+body {
+  background-color: #c5dff8;
+  margin: 0;
+  color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", Georgia, "Times New Roman", Times, serif;
+}
+
+.container {
+  background-color: #7895cb;
+  padding: 3rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 7px 10px #4a55a2;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: auto auto;
+  row-gap: 1rem;
+  column-gap: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  margin: 0;
+  text-align: center;
+}
+
+label {
+  font-weight: bold;
+}
+
+.character-amount-container {
+  display: flex;
+  align-items: center;
+}
+
+.number-input {
+  width: 2rem;
+}
+
+.password-display {
+  background-color: #ffffff;
+  color: black;
+  padding: 1rem;
+  border: 1px solid #c5dff8;
+  height: 2rem;
+  width: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  word-break: break-all;
+  border-radius: 0.5rem;
+  position: relative;
+}
+
+.btn {
+  grid-column: span 2;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 1rem;
+}
+
+.btn:hover {
+  background-color: #ffffff;
+  color: #7895cb;
+  transform: scale(1.08);
+  transition: all 0.1s ease-in-out;
+}
+
+.password-display > p {
+  display: flex;
+  flex-basis: 100%;
+}
+
+#clipboard {
+  color: #7895cb;
+  cursor: pointer;
+}
+
+#copyAlert {
+  margin: 0;
+  color: #ffffff;
+  background-color: #00000088;
+  padding: 2px 5px;
+  border-radius: 0.3rem;
+  position: absolute;
+  top: 0px;
+  right: 0.5px;
+  font-size: 12px;
+  z-index: 1;
+  font-weight: 100;
+  display: none;
+}
